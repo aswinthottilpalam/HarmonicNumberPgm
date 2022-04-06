@@ -25,7 +25,7 @@ namespace HarmonicNumberPgm
                 {
                     result = (result + 1) / i;
                 }
-                Console.WriteLine($"Harmonic number = {result}");
+                Console.WriteLine($"Nth Harmonic Value = {result}");
             }
             else
             {
