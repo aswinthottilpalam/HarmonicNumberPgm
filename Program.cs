@@ -6,7 +6,10 @@ namespace HarmonicNumberPgm
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Harmonic number Program");
+            
+            Harmonicnumber H = new Harmonicnumber();
+            H.HarmonicNumberMethod();
         }
     }
 }

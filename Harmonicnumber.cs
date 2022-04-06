@@ -6,7 +6,23 @@ using System.Threading.Tasks;
 
 namespace HarmonicNumberPgm
 {
-    internal class Harmonicnumber
+    public class Harmonicnumber
     {
+        int n;
+
+        
+        public void HarmonicNumberMethod()
+        {
+            Console.WriteLine("Enter the number: ");
+            n = Convert.ToInt32(Console.ReadLine());
+           
+            double result = 0;
+            
+            for (int i = 1; i<=n; i++)
+            {
+                result = (result + 1) / i;
+            }
+            Console.WriteLine($"Harmonic number = {result}");
+        }
     }
 }
