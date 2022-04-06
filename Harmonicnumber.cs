@@ -17,12 +17,21 @@ namespace HarmonicNumberPgm
             n = Convert.ToInt32(Console.ReadLine());
            
             double result = 0;
+           
             
-            for (int i = 1; i<=n; i++)
+            if (n > 0)
             {
-                result = (result + 1) / i;
+                for (int i = 1; i <= n; i++)
+                {
+                    result = (result + 1) / i;
+                }
+                Console.WriteLine($"Harmonic number = {result}");
             }
-            Console.WriteLine($"Harmonic number = {result}");
+            else
+            {
+                Console.WriteLine("Please enter value greater than 0");
+            }
+            
         }
     }
 }
